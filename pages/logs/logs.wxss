@@ -1,3 +1,6 @@
+.container {
+  height: 100%;
+}
 .my_header_wrap {
     margin-bottom: 30rpx;
     padding: 20rpx;
@@ -78,8 +81,8 @@
 }
 .my_header_wrap .my_header_name {
     position: relative;
-    font-size: 30rpx;
-    margin-right: 40rpx;
+    font-size: 15px;
+    margin-right: 20px;
     white-space: nowrap;
 }
 .my_header_wrap .my_header_name_text {
@@ -92,9 +95,9 @@
 }
 .my_header_wrap .my_header_name_edit {
     display: inline-block;
-    margin: 0 0 0 8rpx;
-    width: 24rpx;
-    height: 24rpx;
+    margin: 0 0 0 4px;
+    width: 12px;
+    height: 12px;
     vertical-align: middle;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBT…VpZ1rfmmfisTTR39fUXWvitu37h9o/bRoG+TsMbXxCH58vmgwXoPcjyaAAAAAASUVORK5CYII=);
     background-size: 12px;
@@ -103,11 +106,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-top: 10rpx;
+    margin-top: 5px;
     color: hsla(0,0%,100%,.7);
 }
 .my_header_wrap .my_header_info {
-    margin-top: 12rpx;
+    margin-top: 6px;
 }
 .my_header_wrap .my_header_vip {
         position: relative;
@@ -125,12 +128,12 @@
 .my_header_wrap .my_header_vip:before {
     content: "";
     display: block;
-    width: 40rpx;
-    height: 40rpx;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    left: -20rpx;
+    left: -10px;
     top: 50%;
-    margin-top: -20rpx;
+    margin-top: -10px;
     background: url(//wq.360buyimg.com/fd/base/img/my/icon_vip.png) no-repeat 0 0;
     background-size: 100px 20px;
 }
@@ -166,4 +169,115 @@
     position: absolute;
     right: 8px;
     top: 5px;
+}
+/* 订单信息 */
+.my_section {
+    position: relative;
+    margin: 15px 0;
+    background: #fff;
+}
+.my_order {
+  display: flex;
+}
+.my_order .my_order_entrances {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 42px 0 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    background: no-repeat center 16px;
+    background-size: 20px;
+}
+.my_order .my_order_entrances.type_unpay {
+    background-image: url("../../images/icon/unpay.png");
+}
+
+.my_order .my_order_entrances .dot {
+    top: 8px;
+    left: 50%;
+    margin-left: 5px;
+}
+
+.dot.dot_num {
+    box-sizing: border-box;
+    width: auto;
+    min-width: 14px;
+    padding: 0 4px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 14px;
+}
+.dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 8px;
+    color: #fff;
+    background-color: #e93b3d;
+}
+
+/* 客户服务 */
+.my_section .head {
+    position: relative;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.my_section .head_after {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+.my_section .head_version {
+    color: #666;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 70px;
+    height: 45px;
+    position: absolute;
+    right: 14px;
+    top: -50%;
+    transform: translateY(50%);
+}
+/* 收藏&优惠 */
+.my_lnks {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+}
+.my_lnks .my_lnks_item {
+    flex: 1;
+    padding: 11px 0 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.my_lnks .my_lnks_num {
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: 24px;
+    margin: 0 auto 3px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.head_item {
+  margin: 1px;
 }

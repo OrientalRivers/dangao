@@ -22,7 +22,7 @@
           <view class='my_header_info'>
             <view class='my_header_vip'>钛合金</view>
             <view class='my_header_link my_header_icon'>
-              京享值1291
+              享值1291
             </view>
             <view></view>
           </view>
@@ -30,4 +30,85 @@
       </view>
     </view>
   </view>
+  <!-- 订单信息 -->
+  <view class="my_section">
+    <view class="my_order">
+      <view class="my_order_entrances type_unpay" style='background-image: url("../../images/icon/unpay.png")'>
+        <view>待付款</view>
+        <view class="dot dot_num">1</view>
+      </view>
+      <view class="my_order_entrances type_unrecieve" style='background-image: url("../../images/icon/unrecieve.png")'>
+        <view>待收货</view>
+      </view>
+      <view class="my_order_entrances type_grade" style='background-image: url("../../images/icon/grade.png")'>
+        <view>待评价</view>
+      </view>
+      <view class="my_order_entrances type_consult" style='background-image: url("../../images/icon/consult.png")'>
+        <view>退换/售后 </view>
+      </view>
+      <view class='my_order_entrances type_orders' style='background-image: url("../../images/icon/orders.png")'>
+        <view>全部订单</view>
+      </view>
+    </view>
+  </view>
+  <!-- 收藏&优惠 -->
+  <view class="my_section">
+    <view class="my_lnks">
+      <view class="my_lnks_item">
+        <view class="my_lnks_num">0</view>
+        我的收藏
+      </view>
+      <view class="my_lnks_item">
+        <view class="my_lnks_num">0</view>
+        优惠卷
+      </view>
+      <view class="my_lnks_item">
+        <view class="my_lnks_num">0</view>
+        好友赏金
+      </view>
+    </view>
+  </view>
+  <!-- 地址管理 -->
+  <view class="my_section">
+    <view class="head head_address">
+      <view>
+        地址管理
+      </view>
+      <image class='head_after' src='../../images/icon/right_ico.png'></image>
+    </view>
+  </view>
+  <!-- 客户服务 -->
+  <view class="my_section head_item">
+    <view class="head head_help">
+      <view>
+        客户服务
+      </view>
+      <image class='head_after' src='../../images/icon/right_ico.png'></image>
+    </view>
+  </view>
+  <view class="my_section head_item">
+    <view class="head head_help">
+      <view>
+        意见反馈
+      </view>
+      <image class='head_after' src='../../images/icon/right_ico.png'></image>
+    </view>
+  </view> 
+  <view class="my_section head_item">
+    <view class="head head_help">
+      <view>
+        商家合作
+      </view>
+      <image class='head_after' src='../../images/icon/right_ico.png'></image>
+    </view>
+  </view>
+  <view class="my_section head_item">
+    <view class="head head_help">
+      <view>
+        版本号
+      </view>
+      <!-- <image class='head_after' src='../../images/icon/right_ico.png'></image> -->
+      <view class='head_version'>v1.1.0</view>
+    </view>
+  </view>     
 </view>
