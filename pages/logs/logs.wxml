@@ -1,0 +1,33 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="my_header_wrap">
+    <view class="my_header">
+      <view class="my_header_main">
+        <!-- 头像信息 -->
+        <view class="my_header_avatar">
+          <view class="my_header_avatar_img">
+            <image src="../../images/avatar.jpg"></image>
+          </view>
+          <view class='my_header_avatar_tag'>待实名认证</view>
+        </view>
+        <!-- 文字信息 -->
+        <view class="my_header_msg">
+          <view class="my_header_name">
+            <view class='my_header_name_text'>小甜甜</view>
+            <view class='my_header_name_edit'></view>
+          </view>
+          <view class='my_header_pin'>
+            用户名：小甜甜
+          </view>
+          <view class='my_header_info'>
+            <view class='my_header_vip'>钛合金</view>
+            <view class='my_header_link my_header_icon'>
+              京享值1291
+            </view>
+            <view></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
