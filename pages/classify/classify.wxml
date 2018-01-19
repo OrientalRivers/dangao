@@ -1,2 +1,63 @@
-<!--pages/classify/classify.wxml-->
-<text>pages/classify/classify.wxml</text>
+<view class="container">
+  <view class="category-viewport clearfix">
+    <view class="category-tab">
+      <view class='category-tab-ul'>
+        <block wx:for = "{{ navLeftItems }}" wx:key="unique"> 
+          <view><view class="{{curNav == item.id ? 'active' : ''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='switchRightTab'>{{item.unique}}</view></view>
+        </block>
+        
+        <!-- <view><view>人气品牌</view></view>
+        <view><view>人气口味</view></view>
+        <view><view>人群推荐</view></view> -->
+      </view>
+    </view>
+    <view class="category-content">
+      <view class="category-content-wrapper">
+        <view>
+          <view class="category-third-promotion">
+            <view>
+              <image src='../../images/a4.jpg'></image>
+            </view>
+          </view>
+          <view class="category-div">
+            <view>
+              <view>人气推荐</view>
+            </view>
+            <view class='category-style-1'>
+              <view>
+                <view>
+                  <image src='../../images/5501.jpg'></image>
+                  <view>苏苏</view>
+                </view>
+              </view>
+              <view>
+                <view>
+                  <image src='../../images/5501.jpg'></image>
+                  <view class="span">苏苏</view>
+                </view>
+              </view>
+              <view>
+                <view>
+                  <image src='../../images/5501.jpg'></image>
+                  <view class="span">苏苏</view>
+                </view>
+              </view>
+              <view>
+                <view>
+                  <image src='../../images/5501.jpg'></image>
+                  <view class="span">苏苏</view>
+                </view>
+              </view>
+              <view>
+                <view>
+                  <image src='../../images/5501.jpg'></image>
+                  <view class="span">苏苏</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

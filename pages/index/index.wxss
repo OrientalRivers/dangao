@@ -1,0 +1,159 @@
+.slider-wrapper {
+  margin-top: -50rpx;
+}
+.slider-wrapper .new-slide {
+  width: 100%;
+  height: 400rpx;
+}
+.slider-wrapper .new-slide image {
+  width: 100%;
+  height: 400rpx;
+}
+/* 引导 */
+.box-enter {
+  margin: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+.box-enter .quick-entry-link {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+}
+.box-enter .quick-box {
+  margin: 6px 0;
+}
+.box-enter .quick-box image {
+  width: 90rpx;
+  height: 90rpx;
+}
+.box-enter .quick-box view {
+  color: #666;
+  font-size: 14px;
+  margin-top: 3px;
+}
+/* 推荐 */
+.floor .floor-tit {
+    text-align: center;
+    line-height: 70rpx;
+    color: white;
+    white-space: nowrap;
+}
+.floor .tit-img image {
+    width: 384rpx;
+    height: 70rpx;
+}
+.similar-li:nth-child(2n+1) {
+    padding-right: 2px;
+}
+.similar-li:nth-child(2n) {
+    padding-left: 2px;
+} 
+.similar-li {
+    float: left; 
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+    position: relative;
+}
+.similar-product {
+    background-color: white;
+    padding-bottom: 6px;
+    font-size: 0;
+}
+.similar-posre {
+    position: relative;
+}
+.similar-posre image {
+  width: 370rpx;
+  height: 370rpx;
+}
+.similar-product-text {
+    height: 33px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 17px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+}
+.similar-product-info {
+    height: 23px;
+    font-size: 13px;
+    overflow: hidden;
+}
+.similar-product .praise-info {
+    display: block;
+    padding: 0 4px;
+    position: relative;
+    top: 1px;
+    height: 25px;
+    line-height: 25px;
+}
+.similar-product-price {
+    color: #f23030;
+    display: inline-block;
+    padding: 0 5px 0 4px;
+    position: relative;
+    top: 1px;
+    height: 25px;
+    line-height: 25px;
+}
+.similar-product-price .big-price {
+    display: inline-block;
+    font-size: 16px;
+}
+.similar-product-price .small-price {
+    display: inline-block;
+}
+
+.praise-num {
+    font-size: 20px;
+    color: #999;
+    height: 25px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.praise-num view {
+    position: relative;
+    top: 6px;
+    display: block;
+    width: 200%;
+    -webkit-transform: scale(0.5, 0.5);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.guess-button {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    text-align: center;
+    color: #686868;
+    font-size: 12px;
+    width: 49px;
+    height: 24px;
+    line-height: 25px;
+}
+.guess-button:after {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    -webkit-transform-origin: top left;
+}

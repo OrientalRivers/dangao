@@ -1,49 +1,98 @@
 <!--index.wxml-->
 <view class="container">
-    <view>
-        <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
-            <block wx:for="{{images}}">
-                <swiper-item>
-                    <image src="{{item.picurl}}" class="slide-image"/>
-                </swiper-item>
-            </block>
-        </swiper>
+  <!-- 轮播图 -->
+  <view class="slider-wrapper">
+    <swiper class="new-slide" autoplay='true' circular='true' indicator-dots='true' indicator-color='rgba(255, 255, 255, .3)' indicator-active-color='#fff'>
+      <!-- <block wx:for="{{imgUrls}}"> -->
+        <swiper-item class="slide-li">
+          <image src="../../images/s1.jpg" class="slide-image"/>
+        </swiper-item>
+        <swiper-item class="slide-li">
+          <image src="../../images/s2.jpg" class="slide-image"/>
+        </swiper-item>
+      <!-- </block> -->
+    </swiper>
+  </view>
+  <!-- 引导快 -->
+  <view class="box-enter">
+    <view class="box-item">
+      <view>
+        <view class="quick-entry-nav">
+          <view class="quick-entry-link">
+            <view class="quick-box">
+              <image src='../../images/d2.png'></image>
+              <view>送爱人</view>
+            </view>
+          </view>
+          <view class="quick-entry-link">
+            <view class="quick-box">
+              <image  src='../../images/d2.png'></image>
+              <view>送爱人</view>
+            </view>
+          </view>
+          <view class="quick-entry-link">
+            <view class="quick-box">
+              <image  src='../../images/d2.png'></image>
+              <view>送爱人</view>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
-
-    <view class="text">
-        <view class="line_flag"></view>
-        <text>主题馆</text>
+  </view>
+  <!-- 特色推荐 -->
+  <view class='floor'>
+    <view class='floor-tit'>
+      <view class="tit-img">
+        <image src='../../images/q70.jpg'></image>
+      </view>
     </view>
-    
-    <view class="venues_box">
-        <view class="venues_list">
-            <block wx:for="{{venuesItems}}">
-                <view class="venues_item">
-                    <navigator url="../brand/index?id={{item.id}}">
-                        <image src="{{item.smallpic}}"/>
-                    </navigator>
+    <view class="find-similar-ul clearfix">
+      <view class="similar-li">
+        <view class='J_ping'>
+          <view class="similar-product">
+            <view class="similar-posre">
+                <image  class="Jschangewidth" src='../../images/q50.jpg'></image>
+            </view>
+            <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
+            <view class="similar-product-info">
+                <view class="similar-product-price">¥ 
+                    <view class="big-price">6999</view>
+                    <view class="small-price">.00</view>
                 </view>
-            </block>
+            </view>
+            <view class="praise-info">
+                <view class="praise-num">
+                    <view>好评率90%</view>
+                </view>
+                <view class="guess-button J_ping" >看相似</view>
+            </view>
+          </view>
         </view>
-    </view>
+      </view>
 
-    <view class="text">
-        <view class="line_flag"></view>
-        <text>环球精选</text>
-    </view>
-
-    <view class="choice_box">
-        <view class="choice_list">
-            <block wx:for="{{choiceItems}}">
-                <navigator url="../details/index?id={{item.id}}">
-                    <view class="choice_item">
-                        <image src="{{item.goodspics}}"/>
-                        <view class="title">{{item.title}}</view>
-                    </view>
-                </navigator>
-            </block>
+       <view class="similar-li">
+        <view class='J_ping'>
+          <view class="similar-product">
+            <view class="similar-posre">
+                 <image  class="Jschangewidth" src='../../images/q50.jpg'></image> 
+            </view>
+             <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view> 
+            <view class="similar-product-info">
+                <view class="similar-product-price">¥ 
+                    <view class="big-price">6999</view>
+                    <view class="small-price">.00</view>
+                </view>
+            </view>
+             <view class="praise-info">
+                <view class="praise-num">
+                    <view>好评率90%</view>
+                </view>
+                <view class="guess-button J_ping" >看相似</view>
+            </view> 
+          </view>
         </view>
+      </view> 
     </view>
-
+  </view>
 </view>

@@ -1,1 +1,153 @@
 /* pages/classify/classify.wxss */
+page {
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+.category-viewport {
+  height: auto;
+  min-height: 100%;
+  border-top: 1px rgba(0, 0, 0, 0) solid;
+}
+
+.category-tab {
+  float: left;
+  min-width: 76px;
+  width: 76px;
+  height: auto;
+  /* overflow-y: auto; */
+  min-height: 100%;
+}
+
+.category-tab-ul {
+  width: 75px;
+}
+
+.category-tab view {
+  height: 46px;
+  line-height: 46px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.category-tab > view > view {
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: #080808;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.category-tab  view  view.active {
+  color: #f23030;
+}
+
+.category-tab view::before {
+  content: '';
+  height: 92px;
+  width: 1px;
+  position: absolute;
+  left: auto;
+  top: 0px;
+  right: 0px;
+  bottom: auto;
+  background-color: #e5e5e5;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
+.category-tab view::after {
+  content: '';
+  height: 1px;
+  width: 200%;
+  position: absolute;
+  left: 0px;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  background-color: #e5e5e5;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
+.category-content {
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  font-size: 12px;
+  color: #252525;
+  background-color: #f3f5f7;
+}
+
+.category-content .category-content-wrapper {
+  margin-left: 76px;
+}
+
+.category-third-promotion {
+  margin: 7px 7px 0px 7px;
+}
+
+.category-third-promotion view image {
+  width: 100%;
+  height: 192rpx;
+}
+
+.category-content .category-div {
+  /* display: none; */
+  margin: 19px 7px 0 7px;
+}
+
+.category-div > view > view {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-weight: bold;
+  color: #080808;
+}
+
+.category-content .category-style-1 {
+  border: 0;
+  font-size: 0;
+  padding: 7px 10px 0px 10px;
+  overflow: hidden;
+  margin-top: 9px;
+  background-color: #fff;
+}
+
+.category-style-1 > view {
+  width: 32.8%;
+  float: left;
+  text-align: center;
+}
+
+.category-style-1 image {
+  width: 55px;
+  height: 55px;
+  border: 0;
+}
+
+.category-style-1 .span {
+  font-size: 12px;
+  height: 36px;
+  line-height: 36px;
+  color: #686868;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  z-index: 2;
+  position: relative;
+}

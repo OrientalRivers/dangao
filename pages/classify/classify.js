@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    navLeftItems: [
+      { id: 0, unique: 'unique_0' },
+      { id: 1, unique: 'unique_1' },
+      { id: 2, unique: 'unique_2' },
+      { id: 3, unique: 'unique_3' },
+      { id: 4, unique: 'unique_4' },
+      { id: 5, unique: 'unique_5' }, 
+    ],
+    navRightItems: [],
+    curNav: 0,
+    curIndex: 0 
   },
 
   /**
@@ -14,7 +24,16 @@ Page({
   onLoad: function (options) {
   
   },
-
+  switchRightTab: function(e) {  
+        // 获取item项的id，和数组的下标值  
+        let id = e.target.dataset.id,  
+            index = parseInt(e.target.dataset.index);  
+        // 把点击到的某一项，设为当前index
+        this.setData({  
+            curNav: id,  
+            curIndex: index  
+        })  
+    } ,
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

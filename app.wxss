@@ -9,3 +9,11 @@
   box-sizing: border-box; */
   background: #f7f7f7;
 } 
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
