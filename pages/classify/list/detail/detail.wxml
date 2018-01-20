@@ -1,0 +1,50 @@
+<!--pages/classify/list/detail/detail.wxml-->
+<view class='container'>
+  <view class="slider-wrapper">
+    <swiper class="scroll-imgs" autoplay='true' circular='true' indicator-dots='true' indicator-color='rgba(255, 255, 255, .3)' indicator-active-color='#ff5000'>
+      <!-- <block wx:for="{{imgUrls}}"> -->
+      <swiper-item class="slide-li">
+        <image src="../../../../images/1747.jpg" class="slide-image" />
+      </swiper-item>
+      <swiper-item class="slide-li">
+        <image src="../../../../images/2ae.jpg" class="slide-image" />
+      </swiper-item>
+      <!-- </block> -->
+    </swiper>
+  </view>
+  <view class="goods-part">
+    <view class="basic-info">
+      <view class="prod-title">
+        <view class="title">
+          <view>
+            <image src='../../../../images/icon/att.png'></image>
+          </view>
+          <view class="focus-info">关注</view>
+        </view>
+        <view>
+          <view class="title-text-wrap padding-right-60">
+            <view class="title-text">幸福西饼超大型庆典蛋糕开业蛋糕30磅同城免费配送深圳广杭州苏州配送多层蛋糕 30磅</view>
+          </view>
+        </view>
+      </view>
+      <view class=''>
+        <view class='a'>1.16-1.23！全场满99立减20！可叠加30元券！生日蛋糕可代写贺卡！点击立即抢！</view>
+      </view>
+      <view class="prod-price-wrap clearfix">
+        <view class="prod-price clearfix">
+          <image src='../../../../images/icon/yang-pic.png'></image>
+          <view class="yang-pic-price">
+            <view class="big-price">999</view>
+            <view class="small-price">.00</view>
+          </view>
+        </view>
+        <view class="old-prod-price clearfix">
+          <view class="yang-pic-price">
+            <view class="old-price">￥999.00</view>
+          </view>
+        </view>
+        <view></view>
+      </view>
+    </view>
+  </view>
+</view>

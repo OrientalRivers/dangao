@@ -1,0 +1,166 @@
+/* pages/classify/list/detail/detail.wxss */
+
+.slider-wrapper {
+  /* margin-top: -50rpx; */
+}
+
+.slider-wrapper .scroll-imgs {
+  height: 750rpx;
+}
+
+.slider-wrapper .scroll-imgs .slide-li image {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+/* 名称 */
+
+.goods-part {
+  padding: 7px 0 10px 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.goods-part::before {
+  position: absolute;
+  content: '';
+  transform: scaleY(0.5);
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #e3e5e9;
+  z-index: 10;
+}
+
+.goods-part::after {
+  position: absolute;
+  content: '';
+  transform: scaleY(0.5);
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #e3e5e9;
+  z-index: 10;
+}
+
+.prod-title {
+  position: relative;
+}
+
+.title {
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  text-align: center;
+}
+
+.title image {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.prod-title .title-text-wrap {
+  display: inline-block;
+  font-size: 0;
+  color: #232326;
+  margin-right: 10px;
+  line-height: 20px;
+  min-height: 40px;
+  text-align: left;
+}
+
+.prod-title .title-text-wrap.padding-right-60 {
+  padding-right: 60px;
+  margin: 0;
+}
+
+.prod-title .title-text-wrap .title-text {
+  font-size: 16px;
+  color: #232326;
+  line-height: 20px;
+}
+
+.focus-info {
+  color: #868489;
+  font-size: 14px;
+  position: relative;
+  top: -3px;
+}
+
+.basic-info .a {
+  font-size: 13px;
+  line-height: 17px;
+  text-align: justify;
+  color: #f23030;
+  text-decoration: underline;
+  margin-left: 3px;
+}
+
+.basic-info .prod-price-wrap .prod-price {
+  font-size: 23px;
+  font-family: Helvetica;
+  color: #f23030;
+  font-weight: 700;
+  line-height: 23px;
+  float: left;
+  margin-top: 7px;
+  margin-right: 6px;
+}
+
+.basic-info .prod-price-wrap .prod-price image {
+  float: left;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: 7px;
+}
+
+.yang-pic-price {
+  display: block;
+  float: left;
+  margin-left: 3px;
+  line-height: 23px;
+}
+
+.big-price {
+  display: inline-block;
+  font-size: 23px;
+  line-height: 23px;
+}
+
+.small-price {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.basic-info .prod-price-wrap .old-prod-price {
+  font-size: 23px;
+  font-family: Helvetica;
+  /* color: #f23030; */
+  font-weight: 700;
+  line-height: 23px;
+  float: left;
+  margin-top: 7px;
+  margin-right: 6px;
+}
+.old-prod-price .yang-pic-price {
+  display: block;
+  float: left;
+  margin-left: -20px;
+  line-height: 23px;
+}
+.old-price {
+  color: #999;
+  font-size: 20px;
+  line-height: 20px;
+  transform: scale(0.6, 0.6);
+  margin-top: 4px;
+  text-decoration:line-through;
+}
+
+

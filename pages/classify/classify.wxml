@@ -2,10 +2,12 @@
   <view class="category-viewport clearfix">
     <view class="category-tab">
       <view class='category-tab-ul'>
-        <block wx:for = "{{ navLeftItems }}" wx:key="unique"> 
-          <view><view class="{{curNav == item.id ? 'active' : ''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='switchRightTab'>{{item.unique}}</view></view>
+        <block wx:for="{{ navLeftItems }}" wx:key="unique">
+          <view>
+            <view class="{{curNav == item.id ? 'active' : ''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='switchRightTab'>{{item.unique}}</view>
+          </view>
         </block>
-        
+
         <!-- <view><view>人气品牌</view></view>
         <view><view>人气口味</view></view>
         <view><view>人群推荐</view></view> -->
@@ -24,36 +26,16 @@
               <view>人气推荐</view>
             </view>
             <view class='category-style-1'>
-              <view>
-                <view>
-                  <image src='../../images/5501.jpg'></image>
-                  <view>苏苏</view>
+              <block wx:for = "{{ navLeftItems }}" wx:key="unique">
+               <navigator url='/pages/classify/list/list'> 
+                <view class='category-item'>
+                  <view>
+                    <image src='../../images/5501.jpg'></image>
+                    <view class="span">苏苏</view>
+                  </view>
                 </view>
-              </view>
-              <view>
-                <view>
-                  <image src='../../images/5501.jpg'></image>
-                  <view class="span">苏苏</view>
-                </view>
-              </view>
-              <view>
-                <view>
-                  <image src='../../images/5501.jpg'></image>
-                  <view class="span">苏苏</view>
-                </view>
-              </view>
-              <view>
-                <view>
-                  <image src='../../images/5501.jpg'></image>
-                  <view class="span">苏苏</view>
-                </view>
-              </view>
-              <view>
-                <view>
-                  <image src='../../images/5501.jpg'></image>
-                  <view class="span">苏苏</view>
-                </view>
-              </view>
+               </navigator> 
+              </block>
             </view>
           </view>
         </view>

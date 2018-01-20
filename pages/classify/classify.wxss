@@ -109,7 +109,7 @@ page {
   margin: 19px 7px 0 7px;
 }
 
-.category-div > view > view {
+.category-div > view .category-item {
   font-size: 12px;
   margin: 0;
   padding: 0;
@@ -127,7 +127,7 @@ page {
   background-color: #fff;
 }
 
-.category-style-1 > view {
+.category-style-1 .category-item {
   width: 32.8%;
   float: left;
   text-align: center;

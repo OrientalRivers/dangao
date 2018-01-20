@@ -1,0 +1,51 @@
+<!--pages/classify/list/list.wxml-->
+<view class='container'>
+  <!-- 筛选区 -->
+  <view class='list-head'>
+    <view class="new-search-tab">
+      <view class="new-change-eleven {{curNav == '0'? 'active': ''}}" data-id="0" data-index="0" bindtap='switchTab'>销量 {{ curNav }}</view>
+      <view class="new-change-eleven {{curNav == '1'? 'active': ''}}" data-id="1" data-index="1" bindtap='switchTab'>口碑</view>
+      <view class="new-change-eleven new-sort-price  {{curNav == '2'? 'active': ''}}" data-id="2" data-index="2" bindtap='switchTab'>
+        价格
+        <image wx:if="{{curNav != '2'}}" src="../../../images/icon/sprites_07.png"></image>
+        <image wx:if="{{curNav == '2'}}" src="{{sortPrice%2 == 0? '../../../images/icon/sprites_05.png': '../../../images/icon/sprites_02.png'}}"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 列表区 -->
+  <view class='list-content floor'>
+    <view class='floor-tit'>
+      <view class="tit-img">
+        <image src='../../../images/q71.jpg'></image>
+      </view>
+    </view>
+    <view class="find-similar-ul clearfix">
+      <block wx:for="[1,2,3,4]">
+        <view class="similar-li">
+          <view class='J_ping'>
+            <view class="similar-product">
+              <navigator url="/pages/classify/list/detail/detail">
+                <view class="similar-posre">
+                  <image class="Jschangewidth" src='../../../images/q50.jpg'></image>
+                </view>
+                <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
+                <view class="similar-product-info">
+                  <view class="similar-product-price">¥
+                    <view class="big-price">6999</view>
+                    <view class="small-price">.00</view>
+                  </view>
+                </view>
+              </navigator>
+              <view class="praise-info">
+                <view class="praise-num">
+                  <view>好评率90%</view>
+                </view>
+                <view class="guess-button J_ping">看相似</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
