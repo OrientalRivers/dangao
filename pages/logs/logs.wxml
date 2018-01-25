@@ -33,22 +33,39 @@
   <!-- 订单信息 -->
   <view class="my_section">
     <view class="my_order">
-      <view class="my_order_entrances type_unpay" style='background-image: url("../../images/icon/unpay.png")'>
+      <navigator url='./orderlist/orderlist' class="my_order_entrances type_unpay" style='background-image: url("../../images/icon/unpay.png")'>
+        <!-- <view class="my_order_entrances type_unpay" style='background-image: url("../../images/icon/unpay.png")'> -->
         <view>待付款</view>
         <view class="dot dot_num">1</view>
-      </view>
-      <view class="my_order_entrances type_unrecieve" style='background-image: url("../../images/icon/unrecieve.png")'>
-        <view>待收货</view>
-      </view>
-      <view class="my_order_entrances type_grade" style='background-image: url("../../images/icon/grade.png")'>
+        <!-- </view> -->
+      </navigator>
+
+      <navigator url='./orderlist/orderlist'  class="my_order_entrances type_unrecieve" style='background-image: url("../../images/icon/unrecieve.png")'>
+        <!-- <view class="my_order_entrances type_unrecieve" style='background-image: url("../../images/icon/unrecieve.png")'> -->
+          <view>待收货</view>
+        <!-- </view> -->
+      </navigator>
+
+
+      <navigator url='./orderlist/orderlist'  class="my_order_entrances type_grade" style='background-image: url("../../images/icon/grade.png")'>
+        <!-- <view class="my_order_entrances type_grade" style='background-image: url("../../images/icon/grade.png")'> -->
         <view>待评价</view>
-      </view>
-      <view class="my_order_entrances type_consult" style='background-image: url("../../images/icon/consult.png")'>
+        <!-- </view> -->
+      </navigator>
+
+
+      <navigator class="my_order_entrances type_consult" style='background-image: url("../../images/icon/consult.png")'>
+        <!-- <view class="my_order_entrances type_consult" style='background-image: url("../../images/icon/consult.png")'> -->
         <view>退换/售后 </view>
-      </view>
-      <view class='my_order_entrances type_orders' style='background-image: url("../../images/icon/orders.png")'>
+        <!-- </view> -->
+      </navigator>
+
+      <navigator url='./orderlist/orderlist' class='my_order_entrances type_orders' style='background-image: url("../../images/icon/orders.png")'>
+        <!-- <view class='my_order_entrances type_orders' style='background-image: url("../../images/icon/orders.png")'> -->
         <view>全部订单</view>
-      </view>
+        <!-- </view> -->
+      </navigator>
+
     </view>
   </view>
   <!-- 收藏&优惠 -->
@@ -93,7 +110,7 @@
       </view>
       <image class='head_after' src='../../images/icon/right_ico.png'></image>
     </view>
-  </view> 
+  </view>
   <view class="my_section head_item">
     <view class="head head_help">
       <view>
@@ -110,5 +127,5 @@
       <!-- <image class='head_after' src='../../images/icon/right_ico.png'></image> -->
       <view class='head_version'>v1.1.0</view>
     </view>
-  </view>     
+  </view>
 </view>
