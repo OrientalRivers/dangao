@@ -71,18 +71,18 @@
   <!-- 收藏&优惠 -->
   <view class="my_section">
     <view class="my_lnks">
-      <view class="my_lnks_item">
+      <navigator class="my_lnks_item" url='/pages/logs/myfocus/myfocus'>
         <view class="my_lnks_num">0</view>
         我的收藏
-      </view>
-      <view class="my_lnks_item">
+      </navigator>
+      <navigator class="my_lnks_item">
         <view class="my_lnks_num">0</view>
         优惠卷
-      </view>
-      <view class="my_lnks_item">
+      </navigator>
+      <navigator class="my_lnks_item">
         <view class="my_lnks_num">0</view>
         好友赏金
-      </view>
+      </navigator>
     </view>
   </view>
   <!-- 地址管理 -->

@@ -6,7 +6,8 @@
     "pages/classify/list/list",
     "pages/classify/list/detail/detail",
     "pages/logs/logs",
-    "pages/logs/orderlist/orderlist"
+    "pages/logs/orderlist/orderlist",
+    "pages/logs/myfocus/myfocus"
   ],
   "window":{
     "backgroundTextStyle":"light",

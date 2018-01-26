@@ -1,0 +1,91 @@
+<!--pages/logs/myfocus/myfocus.wxml-->
+<view class='container'>
+  <view class="wx_wrap">
+
+    <!-- S 导航 -->
+    <view class="fav_nav" id="fav_top_tab">
+      <view class='ul'>
+        <view class="li cur shangpin_tab">
+          <view class='a' href="//home.m.jd.com/myJd/myFocus/newFocusWare.actionv2?sceneval=2">我的收藏</view>
+        </view>
+        <view class="li dianpu_tab">
+          <view class='a' href="//wqs.jd.com/my/fav/shop_fav.shtml?sceneval=2">优惠劵</view>
+        </view>
+        <view class="li js-hide-if-wxwork-env" style="display: none;">
+          <view class='a' href="//wqs.jd.com/my/fav/dapei.shtml?ptag=37146.4.3">搭配</view>
+        </view>
+      </view>
+    </view>
+    <!-- E 导航 -->
+
+
+    <!--S-收藏商品的总数-->
+    <view class="fav_count" style="">
+      <view class="span fav_shoucang_guanzhu">您关注了</view>
+      <em id="fav_total_num">1</em>个商品
+      <view class="span fav_edit" id="edit_btn">编辑</view>
+    </view>
+    <!--S-收藏商品的总数-->
+
+    <!--S-收藏商品的列表-->
+    <view class="fav_items" id="favlist">
+      <view class="fav_item" commid="10597281236" index="0" page="0">
+        <view class="fav_select select" style="display:none;"></view>
+        <view href="//item.m.jd.com/product/10597281236.html" class="fav_link fav_link_goods J_ping" sku="10597281236" report-eventid="MMyJDFollowed_NewCommodity" report-eventparam="10597281236">
+          <image class="image" src="//img11.360buyimg.com/pop/s120x120_jfs/t11236/159/2279173264/810307/ec762cb6/5a13a0b4N18eb1747.jpg" style="width:100px; height:100px" ></image>
+          <view class="name">幸福西饼超大型庆典蛋糕开业蛋糕30磅同城免费配送深圳广杭州苏州配送多层蛋糕30磅</view>
+          <view class="sku">
+            <view class='span'>尺寸：</view>
+            <view class='span'>30磅</view>
+          </view>
+          <view class="price seperator" id="price_box_10597281236" favprice="999" style="overflow: hidden;">
+            <view class="span price_value" style="color: #e4393c;float: none;float: left">
+              <view class='span' style="font-size:12px;margin-right:4px;">¥ </view>999.
+              <view class='span' style="font-size:10px;">00</view>
+            </view>
+            <view class="span more_notice btn" data-url="//wqs.jd.com/search/searchsimilar.shtml?ptag=7213.4.2&amp;sceneid=16&amp;sku=10597281236&amp;jp=999.00">查看相似</view>
+          </view>
+          <view class="price_plus" id="vipprice_box_10597281236" style="font-family: arial;"></view>
+        </view>
+        <view class="sale_items" id="saleItems10597281236">
+          <view class="sale_item last" data-tag="saleTips">
+            <view class="bottom">
+              <view class="mod_sign_tip bor">
+                <view class='span'>赠品</view>
+              </view>
+              <view class="mod_sign_tip bor">
+                <view class='span'>优惠券</view>
+              </view>
+              <view class="mod_sign_tip bor">
+                <view class='span'>加价购</view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <!--E-收藏商品的列表-->
+
+    <!--S-没有内容-->
+    <view class="mod_empty_page" id="commlist_nothing" style="display: none">
+      <view class="mod_empty_page_icon">
+        <image src="http://img11.360buyimg.com/jdphoto/s180x180_jfs/t7759/22/1599876228/6208/6fafc60b/599e36f8Nb4d328b9.png"></image>
+      </view>
+      <view class="mod_empty_page_main">你还没有关注商品</view>
+      <!--p class="mod_empty_page_sub">副文案副文案副文案副文案副文案</p-->
+      <view class="mod_empty_page_btn js-hide-if-wxwork-env" onclick="javascript:location.href='//m.jd.com/'">去逛逛京东购物
+        <i class="mod_empty_page_btn_arrow"></i>
+      </view>
+    </view>
+    <!--p class="fav_nothing" style="display:none;">您还未收藏任何商品，<br>快去<view id="darukouLink" href="javascript:void(0);">这里</view>看看吧！</p-->
+    <!--E-没有内容-->
+
+    <!--S-底部全选-->
+    <view class="fav_fixbar" style="display:none;position:fixed;">
+      <view class="fav_select" id="selectAllBtn">全选</view>
+      <view href="javascript:void(0);" class="btn" id="multiCancle">取消关注</view>
+    </view>
+    <!--E-底部全选-->
+  </view>
+</view>
