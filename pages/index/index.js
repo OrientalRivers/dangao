@@ -9,12 +9,17 @@ Page({
         // duration: 1000,
         // loadingHidden: false  // loading
     },
-
+    switchLogsTab: function () {
+      wx.switchTab({
+        url: '/pages/logs/logs',
+      })
+    },
     //事件处理函数
     swiperchange: function(e) {
         //console.log(e.detail.current)
     },
 
     onLoad: function() {
+      
     }
 })

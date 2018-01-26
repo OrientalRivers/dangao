@@ -1,13 +1,149 @@
 /* pages/classify/list/list.wxss */
+.jd-header-home-wrapper {
+    width: 100%;
+    overflow: hidden;
+    z-index: 28;
+}
+.on-focus {
+    /* background: #efefef url(/so/images/layout/header-bg.png?v=2) repeat-x 0 0; */
+    background: #fff;
+    background-size: 100% 44PX;
+}
+.jd-search-container {
+    min-width: 320PX;
+    max-width: 640PX;
+    margin: 0 auto;
+    z-index: 10;
+    width: 100%;
+}
+.on-focus .jd-search-box-cover {
+    position: absolute;
+    opacity: 0;
+}
+.jd-search-box-cover {
+    width: 100%;
+    height: 40PX;
+    top: 0;
+    min-width: 320PX;
+    max-width: 640PX;
+    margin: 0 auto;
+}
+.jd-search-container .jd-search-box {
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+}
+.jd-search-box .jd-search-tb {
+    margin: 0 10PX;
+    height: 100%;
+    line-height: 3.125rem;
+}
+.jd-search-tb .jd-search-icon {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 10PX;
+}
+.jd-search-icon-back {
+    margin-top: 4PX;
+    display: inline-block;
+}
+.on-focus .jd-search-form {
+    padding-right: 30PX;
+}
+
+.jd-search-tb .jd-search-form {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+#jdSearchBarWrapper {
+    padding: 6PX 0 0 0;
+}
+.on-focus .jd-search-form-box {
+    margin-right: 66PX;
+}
+#index_search_main .on-focus #jdSearchBarWrapper .jd-search-form-box .jd-search-form-input {
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin-top: 0.3125rem;
+    -webkit-border-radius: 0.9375rem;
+    border-radius: 0.9375rem;
+}
+.on-focus .jd-search-form-input {
+    padding: 0 0 0 2em;
+    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAB/0lEQ…214gBu4h1+yHbz++D1yq62DThWNJl8WWrRCpzGHrzE7t8cqmerthhqyQAAAABJRU5ErkJggg==) no-repeat 1em center;
+    background-size: 12PX 12PX;
+    display: block;
+    margin-top: 5PX;
+    width: 100%;
+    -moz-border-radius: 15PX;
+    -webkit-border-radius: 15PX;
+    border-radius: 15PX;
+    overflow: hidden;
+    font-size: 12PX;
+    border: 1PX solid #bfbfbf;
+    height: 30PX;
+}
+.jd-search-form-input {
+    height: 100%;
+    display: inline-block;
+    width: 75%;
+}
+#index_search_main .on-focus #jdSearchBarWrapper .jd-search-form-box .jd-search-form-input input {
+    margin-top: -3PX;
+    color: #232326;
+}
+.on-focus .jd-search-form-input input {
+    margin-left: 5PX;
+}
+.jd-search-form-input input {
+    border: 0;
+    display: inline-block;
+    background: 0;
+    font-size: 12PX;
+    line-height: 16PX;
+    height: 16PX;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: -11PX;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.on-focus .jd-search-form-action-new {
+    position: absolute;
+    right: 10PX;
+    width: 30PX;
+    height: 30PX;
+    top: 12PX;
+    font-size: 14PX;
+    color: #666;
+    line-height: 30PX;
+}
+
+
+
 /* 头部筛选区 */
+.cover-info {
+    position: fixed;
+    background-color: #fff;
+    max-width: 640px;
+    margin: 0 auto;
+    z-index: 999;
+}
+.mjd-header {
+    width: 100%;
+}
 .new-search-tab {
     position: relative;
     height: 80rpx;
     font-size: 0;
     width: 100%;
-    background-color: #fff;
+    background: linear-gradient(to bottom right, #ffffff, #f7f7f7);
     border-top: 1px solid  #ccc;
-    border-bottom: 1px solid  #ccc;
+    border-bottom: 1px solid  #dedede;
 }
 .new-change-eleven {
     width: 33.33%;
@@ -35,7 +171,7 @@
 .floor .tit-img image {
     width: 384rpx;
     height: 70rpx;
-    margin-top: 10rpx;
+    margin-top: 200rpx;
 }
 .similar-li:nth-child(2n+1) {
     padding-right: 2px;

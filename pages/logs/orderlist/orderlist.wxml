@@ -1,0 +1,90 @@
+<!--pages/logs/orderlist/orderlist.wxml-->
+<view class="container">
+  <view>
+    <view class="my_nav" id="myNav" style="z-index: 108;">
+      <view class="my_nav_inner">
+        <view class="my_nav_list" id="nav">
+          <view class="my_nav_list_item {{curNav == '0'? 'cur': ''}}" data-index='0' bindtap='switchOrderlistTab'>
+            <view class='item_div'>所有订单</view>
+          </view>
+          <view class="my_nav_list_item {{curNav == '1'? 'cur': ''}}" data-index='1' bindtap='switchOrderlistTab'>
+            <view class='item_div'>待付款
+              <view class="num" id="payDeaLNum">1</view>
+            </view>
+          </view>
+          <view class="my_nav_list_item {{curNav == '2'? 'cur': ''}}" data-index='2' bindtap='switchOrderlistTab'>
+            <view class='item_div'>待收货
+              <view class="num" id="receiveDeaLNum">2</view>
+            </view>
+          </view>
+          <view class="my_nav_list_item {{curNav == '3'? 'cur': ''}}" data-index='3' bindtap='switchOrderlistTab'>
+            <view class='item_div'>待评价</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="my_order_wrap">
+      <view class="my_order_inner" id="cont">
+        <!-- S 所有订单 -->
+        <view class="my_order" style="">
+          <view id="cont1" class="contJs">
+            <view class="order_box removeJs " data_dealid="70602097977">
+              <view class="order_box_hd" >
+                <view class="order_box_hd_label">订单号：</view>70602097977
+                <view class="order_box_hd_del removeItemJs"></view>
+              </view>
+              <view class="order_head">
+                <view ordertype="0" class="oh_content">
+                  <view class="pState">
+                    <view class='span'>状
+                      <view class='i'></view>态：</view>
+                    <view class="co_blue">已签收</view>
+                  </view>
+                  <view class="pState"> 
+                    <view class='span'>总
+                      <view class='i'></view>价：</view>
+                    <em class="co_red">¥60.50</em>
+                  </view>
+                </view>
+                <view  class="oh_btn bg_6">再次购买</view>
+                <view  class="oh_btn bg_2" id="evaluate_70602097977" >去评价</view>
+                <view  class="oh_btn bg_1" id="share_70602097977" style="display:none;" >分享赚积分</view>
+              </view>
+              <view class="order_shopBar">tuantuan</view>
+              <view class="order_item" itemsku="11355978">
+                <view class="oi_content">
+                  <view>
+                    <image class="image" src="//img10.360buyimg.com/n2/jfs/t6094/107/710811867/382815/4d54717/592bf165n755a88f0.jpg"></image>
+                  </view>
+                  <view class='a'>
+                    <view class='div'>
+                      <view class="skuTitle">深入浅出Node.js </view>
+                    </view>
+                    <view class='p'>
+                      <view class="count">1 件</view>
+                      <view class="price"></view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <!-- <view class="order_box_action removeItemJs ">
+                <view class="order_box_action_item bg_red">
+                  <view>删除</view>
+                </view>
+              </view> -->
+            </view>
+          </view>
+
+
+          <view class="wx_ending">已经没有更多订单了！</view>
+        </view>
+        <!-- E 所有订单 -->
+      </view>
+    </view>
+
+
+
+  </view>
+</view>

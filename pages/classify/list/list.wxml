@@ -1,17 +1,48 @@
 <!--pages/classify/list/list.wxml-->
 <view class='container'>
-  <!-- 筛选区 -->
-  <view class='list-head'>
-    <view class="new-search-tab">
-      <view class="new-change-eleven {{curNav == '0'? 'active': ''}}" data-id="0" data-index="0" bindtap='switchTab'>销量 {{ curNav }}</view>
-      <view class="new-change-eleven {{curNav == '1'? 'active': ''}}" data-id="1" data-index="1" bindtap='switchTab'>口碑</view>
-      <view class="new-change-eleven new-sort-price  {{curNav == '2'? 'active': ''}}" data-id="2" data-index="2" bindtap='switchTab'>
-        价格
-        <image wx:if="{{curNav != '2'}}" src="../../../images/icon/sprites_07.png"></image>
-        <image wx:if="{{curNav == '2'}}" src="{{sortPrice%2 == 0? '../../../images/icon/sprites_05.png': '../../../images/icon/sprites_02.png'}}"></image>
+
+
+  <view class="mjd-header cover-info max-zindex">
+    <view>
+      <view id="fixedtop" class="showfixedtop" style="display: block">
+        <view id="index_search_main" class="jd-header-home-wrapper">
+          <view class="jd-search-container on-focus" id="index_search_head">
+            <view class="jd-search-box-cover" style="opacity: 0;"></view>
+            <view class="jd-search-box">
+              <view class="jd-search-tb">
+                <form action="/ware/search.action" id="index_searchForm" class="jd-search-form">
+                  <view id="jdSearchBarWrapper">
+                    <view class="jd-search-form-box cf">
+                      <view class="jd-search-icon-logo J_ping" report-eventid="MHome_Blogo" report-eventparam="" report-eventlevel="1" page_name="index"></view>
+                      <view class="jd-search-form-icon"></view>
+                      <view class="jd-search-form-input" style=' background: url("../../../images/icon/search.png") no-repeat 1em center;background-size: 12PX 12PX;'>
+                        <input type="text" maxlength="20" autocomplete="off" id="index_newkeyword" name="keyword" value="" placeholder="宝洁京东超级品牌日 年货疯抢1天" class="hilight1" />
+                        <input id="index_category" name="catelogyList" type="text" style="display:none" />
+                      </view>
+                      <view href="javascript:void(0)" id="index_search_submit" class="jd-search-form-action-new">搜索</view>
+                    </view>
+                  </view>
+                </form>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 筛选区 -->
+    <view class='list-head'>
+      <view class="new-search-tab">
+        <view class="new-change-eleven {{curNav == '0'? 'active': ''}}" data-id="0" data-index="0" bindtap='switchTab'>销量 {{ curNav }}</view>
+        <view class="new-change-eleven {{curNav == '1'? 'active': ''}}" data-id="1" data-index="1" bindtap='switchTab'>口碑</view>
+        <view class="new-change-eleven new-sort-price  {{curNav == '2'? 'active': ''}}" data-id="2" data-index="2" bindtap='switchTab'>
+          价格
+          <image wx:if="{{curNav != '2'}}" src="../../../images/icon/sprites_07.png"></image>
+          <image wx:if="{{curNav == '2'}}" src="{{sortPrice%2 == 0? '../../../images/icon/sprites_05.png': '../../../images/icon/sprites_02.png'}}"></image>
+        </view>
       </view>
     </view>
   </view>
+
   <!-- 列表区 -->
   <view class='list-content floor'>
     <view class='floor-tit'>

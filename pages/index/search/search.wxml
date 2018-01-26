@@ -1,0 +1,54 @@
+<!--pages/index/search/search.wxml-->
+<view class='container'>
+  <view>
+    <view id="fixedtop" class="showfixedtop" style="display: block">
+      <!-- <view id="layout_top" name="top"></view> -->
+
+      <!-- <view id="download_banner" class="download-pannel" search_land_searchtransformation_show="true" style="display: none;">
+        <view class="pannel-bg">
+          <img src="//m.360buyimg.com/img/jfs/t2977/335/1927273397/18081/64a032d5/5796df21N0c6edd4e.png">
+        </view>
+        <view class="download-close">
+          <img id="download_openweb" src="/images/index/icon-close-banner.png" class="J_ping" report-eventid="MDownLoadFloatTop_CloseC">
+        </view>
+        <view class="download-logo">
+          <img src="//st.360buyimg.com/m/images/index/top-jdlogo.png">
+        </view>
+        <view class="download-txt">
+          <view class="download-content">
+            <em class="content-up" style="font-size:13px;color:#ffffff;">打开京东App购物</em>
+            <em class="content-down" style="font-size:13px;color:#999999;">新人领188元红包</em>
+          </view>
+        </view>
+        <view class="download-action">
+          <view id="download_openapp" href="javascript:;" class="J_ping" report-eventid="MDownLoadFloatTop_OpenC">
+            <view class="font-large" style="color:#FFFFFF;">立即打开</view>
+          </view>
+        </view>
+      </view> -->
+      <view id="index_search_main" class="jd-header-home-wrapper">
+        <view class="jd-search-container on-focus" id="index_search_head">
+          <view class="jd-search-box-cover" style="opacity: 0;"></view>
+          <view class="jd-search-box">
+            <view class="jd-search-tb">
+              <form action="/ware/search.action" id="index_searchForm" class="jd-search-form">
+                <view id="jdSearchBarWrapper">
+                  <view class="jd-search-form-box cf">
+                    <view class="jd-search-icon-logo J_ping" report-eventid="MHome_Blogo" report-eventparam="" report-eventlevel="1" page_name="index"></view>
+                    <view class="jd-search-form-icon"></view>
+                    <view class="jd-search-form-input"  style=' background: url("../../../images/icon/search.png") no-repeat 1em center;background-size: 12PX 12PX;'>
+                      <!-- <input type="hidden" id="sid" name="sid" value="48713d1df2942d3a3dd4a2f78718e933" /> -->
+                      <input type="text" maxlength="20" focus="true" id="index_newkeyword" name="keyword" value="" placeholder="宝洁京东超级品牌日 年货疯抢1天" class="hilight1" />
+                      <input id="index_category" name="catelogyList" type="text" style="display:none" />
+                    </view>
+                    <view href="javascript:void(0)" id="index_search_submit" class="jd-search-form-action-new">搜索</view>
+                  </view>
+                </view>
+              </form>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

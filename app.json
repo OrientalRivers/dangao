@@ -1,10 +1,12 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/index/search/search",
     "pages/classify/classify",
     "pages/classify/list/list",
     "pages/classify/list/detail/detail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/logs/orderlist/orderlist"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,15 +1,60 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="showfixedtop">
+    <view id="index_search_main" class="header-home-wrapper">
+      <view class="jd-search-container on-blur" id="index_search_head">
+        <view class="jd-search-box-cover" style="opacity: 0.8;"></view>
+        <view class="jd-search-box">
+          <view class="jd-search-tb">
+            <view class="jd-search-icon">
+              <view id="index_search_bar_cancel" class="jd-search-icon-back">
+                <i class="jd-sprite-icon"></i>
+              </view>
+            </view>
+            <navigator url='/pages/index/search/search'>
+              <form action="/ware/search.action" id="index_searchForm" class="jd-search-form">
+                <view id="jdSearchBarWrapper">
+                  <view class="jd-search-form-box cf">
+                    <view class="jd-search-icon-logo J_ping"></view>
+                    <image class="jd-search-form-icon" src='../../images/icon/search.png'></image>
+                    <view class="jd-search-form-input">
+                      <!-- <input type="hidden" id="sid" name="sid" value="81829b953a3e73efcdcbde267e190b29" /> -->
+                      <input type="text" maxlength="20" disabled='false' id="index_newkeyword" placeholder="宝洁京东超级品牌日 年货疯抢1天" class="hilight1" />
+                      <input id="index_category" name="catelogyList" type="text" style="display:none" />
+                    </view>
+
+                    <!-- <view href="javascript:void(0);" class="jd-search-icon-close jd-sprite-icon" id="index_clear_keyword"></view>
+                  <view href="javascript:void(0)" id="index_search_submit" class="jd-search-form-action-new" data-txt="搜索"></view> -->
+
+                  </view>
+                </view>
+              </form>
+            </navigator>
+
+            <view class="jd-search-login login-ed" bindtap='switchLogsTab'>
+              <view class="J_ping">
+                <!-- <view class="jd-search-icon-logined"></view> -->
+                <image class="jd-search-icon-logined" src='../../images/icon/login-ico.png'></image>
+              </view>
+            </view>
+
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
   <!-- 轮播图 -->
   <view class="slider-wrapper">
     <swiper class="new-slide" autoplay='true' circular='true' indicator-dots='true' indicator-color='rgba(255, 255, 255, .3)' indicator-active-color='#fff'>
       <!-- <block wx:for="{{imgUrls}}"> -->
-        <swiper-item class="slide-li">
-          <image src="../../images/s1.jpg" class="slide-image"/>
-        </swiper-item>
-        <swiper-item class="slide-li">
-          <image src="../../images/s2.jpg" class="slide-image"/>
-        </swiper-item>
+      <swiper-item class="slide-li">
+        <image src="../../images/s1.jpg" class="slide-image" />
+      </swiper-item>
+      <swiper-item class="slide-li">
+        <image src="../../images/s2.jpg" class="slide-image" />
+      </swiper-item>
       <!-- </block> -->
     </swiper>
   </view>
@@ -26,13 +71,13 @@
           </view>
           <view class="quick-entry-link">
             <view class="quick-box">
-              <image  src='../../images/d2.png'></image>
+              <image src='../../images/d2.png'></image>
               <view>送爱人</view>
             </view>
           </view>
           <view class="quick-entry-link">
             <view class="quick-box">
-              <image  src='../../images/d2.png'></image>
+              <image src='../../images/d2.png'></image>
               <view>送爱人</view>
             </view>
           </view>
@@ -52,47 +97,47 @@
         <view class='J_ping'>
           <view class="similar-product">
             <view class="similar-posre">
-                <image  class="Jschangewidth" src='../../images/q50.jpg'></image>
+              <image class="Jschangewidth" src='../../images/q50.jpg'></image>
             </view>
             <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
             <view class="similar-product-info">
-                <view class="similar-product-price">¥ 
-                    <view class="big-price">6999</view>
-                    <view class="small-price">.00</view>
-                </view>
+              <view class="similar-product-price">¥
+                <view class="big-price">6999</view>
+                <view class="small-price">.00</view>
+              </view>
             </view>
             <view class="praise-info">
-                <view class="praise-num">
-                    <view>好评率90%</view>
-                </view>
-                <view class="guess-button J_ping" >看相似</view>
+              <view class="praise-num">
+                <view>好评率90%</view>
+              </view>
+              <view class="guess-button J_ping">看相似</view>
             </view>
           </view>
         </view>
       </view>
 
-       <view class="similar-li">
+      <view class="similar-li">
         <view class='J_ping'>
           <view class="similar-product">
             <view class="similar-posre">
-                 <image  class="Jschangewidth" src='../../images/q50.jpg'></image> 
+              <image class="Jschangewidth" src='../../images/q50.jpg'></image>
             </view>
-             <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view> 
+            <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
             <view class="similar-product-info">
-                <view class="similar-product-price">¥ 
-                    <view class="big-price">6999</view>
-                    <view class="small-price">.00</view>
-                </view>
+              <view class="similar-product-price">¥
+                <view class="big-price">6999</view>
+                <view class="small-price">.00</view>
+              </view>
             </view>
-             <view class="praise-info">
-                <view class="praise-num">
-                    <view>好评率90%</view>
-                </view>
-                <view class="guess-button J_ping" >看相似</view>
-            </view> 
+            <view class="praise-info">
+              <view class="praise-num">
+                <view>好评率90%</view>
+              </view>
+              <view class="guess-button J_ping">看相似</view>
+            </view>
           </view>
         </view>
-      </view> 
+      </view>
     </view>
   </view>
 </view>
