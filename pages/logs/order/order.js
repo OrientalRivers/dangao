@@ -1,4 +1,4 @@
-// pages/classify/list/detail/detail.js
+// pages/logs/order/order.js
 Page({
 
   /**
@@ -14,11 +14,7 @@ Page({
   onLoad: function (options) {
   
   },
-  nowBuyFn: function () {
-    wx.navigateTo({
-      url: '../../../logs/order/order',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

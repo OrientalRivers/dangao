@@ -12,7 +12,8 @@
       <!-- </block> -->
     </swiper>
   </view>
-  <view class="goods-part">
+
+  <view class="goods-part price-floor">
     <view class="basic-info">
       <view class="prod-title">
         <view class="title">
@@ -44,6 +45,282 @@
           </view>
         </view>
         <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view id="couponActivity" class="goods-part bdr-tb mar-t">
+    <!-- 新增选择白条分期入口 开始-->
+    <view id="whiteBarInfo" data="【白条支付】即享3期免息" class="prod-whitebar whitebar-flick bdr-b J_ping">
+      <view class="part-note-msg">专享</view>
+      <view class="prod-whitebar-txt">【专享支付】即享免费</view>
+    </view>
+    <!-- 优惠券 -->
+    <view class="x-coupon-floor" id="js-coupon-floor" style="display:none;">
+    </view>
+    <!-- 促销 start-->
+    <view class="prod-promotion borb arrow-fold" id="js-prodPromotion" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+      <view class="prod-promotion-container promotion-down J_ping" id="prodPromotion">
+        <view class="part-note-msg">促销</view>
+        <view class="promotion-content arrow-fold">
+          <em class="icon-popups" style="top: 6px;"></em>
+          <view class="promotion-item item-import">
+            <i class="label-icon-div have-not-icon-div ">
+              <view class="label-text ">换购</view>
+            </i>
+            <view class='a'>
+              <view class=" span promotion-item-text">购买1件可优惠换购热销商品</view>
+            </view>
+          </view>
+          <view class="promotion-item item-import">
+            <i class="label-icon-div have-not-icon-div ">
+              <view class="label-text ">满送</view>
+            </i>
+            <view class='a'>
+              <view class="span promotion-item-text">满1000元另加99元即赠热销商品，赠完即止，请在购物车点击领取</view>
+            </view>
+          </view>
+          <view class="promotion-item item-import item-display-inline">
+            <i class="label-icon-div have-not-icon-div ">
+              <view class="label-text ">限制</view>
+            </i>
+            <view class='a'>
+              <view class="span promotion-item-text"></view>
+            </view>
+          </view>
+          <view class="promotion-item item-import item-display-inline">
+            <i class="label-icon-div have-not-icon-div ">
+              <view class="label-text ">满额返券</view>
+            </i>
+            <view class='a'>
+              <view class="span promotion-item-text"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 促销end-->
+    <!-- 调整样式分割线结束位置   mjs 20151030 -->
+  </view>
+
+  <!-- 选择 -->
+  <view class="goods-part bdr-tb-bold mar-t">
+    <view class="prod-spec" id="natureID">
+      <view class="spec-desc">
+        <view class="part-note-msg">已选</view>
+        <view id="specDetailInfo" class="base-txt">
+          遥远的祝福 8寸
+          <view class="span amount">1件</view>
+        </view>
+        <em class="icon-popups"></em>
+      </view>
+      <view id="warranty-seled-list">
+        <view class="base-txt warranty-text choose-tip">
+          <i class="warranty-icon"></i>可选延保</view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择 -->
+
+  <view class="goods-part bdr-t mar-t loc-floor">
+    <!--地址start-->
+    <view class="send-to">
+      <view class="col01 part-note-msg">送至</view>
+      <view class="send_loc" id="btn-select-region" usualaddress-data="true" region-data="14,1180,6006,0">
+        <view class="address address01 J_ping">
+          <view class="span" id="provinceName">安徽</view>
+          <view class="span" id="cityName">宿州市</view>
+          <view class="span" id="countyName">经济开发区</view>
+          <view class="span" id="townName"></view>
+          <i class="icon icon-location"></i>
+        </view>
+      </view>
+      <view class="row01col03 stockStatus" id="stockStatus">
+        <view class="isExist">现货，23:00前下单,预计02月02日(周五)送达,尊敬的客户您好，受降雪等恶劣天气影响，您的订单配送时间略有延迟，我们正在全力为您服务，请您耐心等待。</view>
+        <view class="send-time">&nbsp;</view>
+      </view>
+    </view>
+    <!--地址end-->
+    <!--重量start-->
+    <view class="provide-srv" id="weightInfoDiv">
+      <view class="part-note-msg">重量 </view>
+      <view class="provider base-txt" id="weightInfoText">3.875kg</view>
+    </view>
+    <!--重量end-->
+    <!--运费start-->
+    <view class="provide-srv" style="" id="fare">
+      <view class="span part-note-msg">运费</view>
+      <view class="provider base-txt" id="fareMoney">店铺单笔订单不满5元，收运费15元</view>
+    </view>
+    <!--运费end-->
+  </view>
+
+  <view id="commendetailModel" commendetail-data="LUIPPTP" class="goods-part bdr-tb mar-t">
+    <!--评论start-->
+    <view class="goodseval J_ping" id="btnAssess">
+      <view class="info">
+        <view class='clearfix'>
+          <view class="span part-note-msg">评价(
+            <em id="comments">1.4万</em>)</view>
+          <view class="good-comment-text">好评
+            <em id="goods">96%</em>
+          </view>
+        </view>
+        <i class="icon-arrow icon-arrow-right"></i>
+      </view>
+    </view>
+    <!--评论end-->
+    <!--评价start-->
+    <view class="prod-comment" id="showDetail">
+      <!--此处新增 增加商品评论 20150422-->
+      <view class="comment-list" id="comment-listID">
+        <view class="comment-list-item">
+          <view class="comment-item-info J_ping">
+            <view class="comment-item-author">zzl凌轩</view>
+            <view class="product-item-star ">
+              <view class="real-star comment-stars-width5"></view>
+            </view>
+          </view>
+          <view class="comment-item-content down-icon J_ping">
+            <view class="content">蛋糕真的挺好吃的，水果的搭配看着舒服，吃起来也挺好，卖家的服务也周到，客服态度很好，值得购买，下次继续光临！！！！👍👍👍👍👍👍</view>
+          </view>
+          <view class="comment-img-container" data-href="/ware/newCommentDetailPicShow.action?commentId=a2bce187-f658-4deb-9669-67411c24d488&amp;wareId=10404937832">
+            <view class="img-container J_ping">
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t10510/170/106009289/37167/6bd0c513/59c604b4Naa856fa4.jpg" style="opacity: 1;"></image>
+              </view>
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t9238/136/2116207797/74662/d94a8c38/59c604b4Nb0ffe14a.jpg" style="opacity: 1;"></image>
+              </view>
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t10792/151/101516544/69950/cf4bb43b/59c604b5Nf626ad21.jpg" style="opacity: 1;"></image>
+              </view>
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t9925/172/108545459/54016/29cad352/59c6049fN0c0dc9d1.jpg" style="opacity: 1;"></image>
+              </view>
+            </view>
+          </view>
+          <view class="comment-item-date J_ping">2017-09-22</view>
+        </view>
+        <view class="comment-list-item">
+          <view class="comment-item-info J_ping">
+            <view class="comment-item-author">y***5</view>
+            <view class="product-item-star ">
+              <view class="real-star comment-stars-width5"></view>
+            </view>
+          </view>
+          <view class="comment-item-content down-icon J_ping">
+            <view class="content">第一次在网上买蛋糕，开始很犹犹豫豫的，担心不能及时送到，没有想到配送服务这么好，我订的时候让上午一定要送到，结果师傅送去我朋友正在上班，还让师傅等了好一会，师傅还态度很好的给我朋友讲，现在天气很热，建议拿回去就放冰箱尽快食用口感更好，真的是太贴心了，蛋糕也做的很漂亮，看着就食欲大增，给你们一个大大的赞</view>
+          </view>
+          <view class="comment-img-container" data-href="/ware/newCommentDetailPicShow.action?commentId=8d0ff5c9-0910-48b4-af5c-968ff29f525e&amp;wareId=10404937832">
+            <view class="img-container J_ping">
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t7186/133/259375992/50073/7156c38c/597df887N0a2a1469.jpg" style="opacity: 1;"></image>
+              </view>
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t6766/26/1166363699/54728/ecc0660e/597df884Nead50682.jpg" style="opacity: 1;"></image>
+              </view>
+              <view class="li comment-img-item js-img-item">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t6097/288/7491010959/43315/74b4482/597df878Na8ea5ba7.jpg" style="opacity: 1;"></image>
+              </view>
+              <view class="li comment-img-item js-img-item" data-num="9">
+                <image src="//img30.360buyimg.com/shaidan/s310x310_jfs/t6871/141/1159929181/47406/9693bd8c/597df885N5f90e3ed.jpg" style="opacity: 1;"></image>
+              </view>
+            </view>
+          </view>
+          <view class="comment-item-date J_ping">2017-07-29</view>
+        </view>
+        <view class="comment-list-item">
+          <view class="comment-item-info J_ping">
+            <view class="comment-item-author">萌***子</view>
+            <view class="product-item-star ">
+              <view class="real-star comment-stars-width5"></view>
+            </view>
+          </view>
+          <view class="comment-item-content down-icon J_ping">
+            <view class="content">口味好，新鲜，送货快，家人很喜欢，价格便宜，包装不错，而且卖家的服务态度又好，物流速度还快，简直找不出第二家了。</view>
+          </view>
+          <view class="comment-item-date J_ping">2016-09-11</view>
+        </view>
+      </view>
+    </view>
+    <!--评价end-->
+    <!--晒单start-->
+    <view class="share-quest bdr-t" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+      <view class="eval-box-i">
+        <view id="orderComment" class="a btn-good J_ping"> 查看全部评价
+          <em class="icon-arrow icon-arrow-right"></em> (1.4万)</view>
+        <view id="consultations" class="btn-ser J_ping" style="display: none;">
+          购买咨询 (0)</view>
+      </view>
+    </view>
+    <!--晒单end-->
+    <!-- 调整样式分割线结束位置   mjs 20151030 -->
+  </view>
+
+  <view id="bottomTipFloor" class="bottom-tip-floor">
+    <view class="bottom-tip"> 图文详情 </view>
+  </view>
+
+  <view id="btmDetail" class="btm-detail" style="height: auto;">
+    <view class="detail" id="wareInfo" style="display:block;">
+      <view id="scale-parent" style=" margin: 0px 10px; overflow: hidden;">
+        <view class="scale-box" id="scale-cont" style="transform-origin: 0px 0px 0px;">
+          <view>
+            <image id="9c2f64b11a8146d7bb0e25d529590699 " src="https://img30.360buyimg.com/popWaterMark/jfs/t3235/347/7715717972/70634/26ffdd49/58ba1753N1b61e663.jpg"></image>
+
+            <image id="a9bc200cdc2b4c24b591d300d0ee14e2 " src="https://img30.360buyimg.com/popWaterMark/jfs/t4339/27/867251495/54117/b1ff03e6/58ba1752N08f82f82.jpg"></image>
+
+            <image id="fabe0ea502124c9799ce466c78fc1231 " src="https://img30.360buyimg.com/popWaterMark/jfs/t3274/330/7650421936/59883/d3a1e97a/58ba1754Nc0ee533f.jpg"></image>
+
+            <image id="d6c1d0b9af9e4b3c8d4866bbcf0122b1 " src="https://img30.360buyimg.com/popWaterMark/jfs/t3919/51/973588125/69701/2fc3459e/58ba1754N6b81bcff.jpg"></image>
+
+            <image id="7cd0bf555f5d433f94d03ba658686e43 " src="https://img30.360buyimg.com/popWaterMark/jfs/t3127/74/7721005453/54856/8b2ba85/58ba1755Nbc8780d2.jpg"></image>
+
+            <image id="d35a5e897cf94254b427dc7192b07c7b " src="https://img30.360buyimg.com/popWaterMark/jfs/t4102/350/938429078/78556/e7b4d8f8/58ba1755N2da68841.jpg"></image>
+
+            <image id="86db90d088d3441dba8e67839f79989a " src="https://img30.360buyimg.com/popWaterMark/jfs/t4255/11/838772494/62244/2bda6e04/58ba1755Nfcaba23d.jpg"></image>
+
+            <image id="7de80a33534440f3a4bfe694f82b5803 " src="https://img30.360buyimg.com/popWaterMark/jfs/t4249/13/859093690/62735/924362aa/58ba1756N7ee4ad1f.jpg"></image>
+
+            <image id="b60accec8f89482ca39e0aa4f8025612 " src="https://img30.360buyimg.com/popWaterMark/jfs/t4288/10/866140633/59500/64bc6dca/58ba1757N4c70abdf.jpg"></image>
+
+            <image id="6aac35d6a4634233802da8224d36b398 " src="https://img30.360buyimg.com/popWaterMark/jfs/t4165/153/834163580/74691/5ca8b3b8/58ba1756Nb93cd9a9.jpg"></image>
+
+            <image id="cb232febf4bb4a26891e3f4e03492281 " src="https://img30.360buyimg.com/popWaterMark/jfs/t4165/178/827891151/66022/3deaa4ce/58ba1758N871c646e.jpg"></image>
+
+            <image id="6539522a2ff4424fae1f49f1a55d8f6f " src="https://img30.360buyimg.com/popWaterMark/jfs/t4264/338/831878945/50119/fa832e5a/58ba1758Nddd42d0c.jpg"></image>
+          </view>
+        </view>
+      </view>
+      <view id="scanWrap" class="recommend-wrap"></view>
+    </view>
+  </view>
+
+  <view id="cart1" class="cart-concern-btm-fixed five-column">
+    <view class="concern-cart">
+      <!--咚咚客服-->
+      <view class="a dong-dong-icn J_ping" id="imBottom">
+        <em class="btm-dongdong yellow"></em>
+        <view class="span focus-info">
+          卖家
+        </view>
+      </view>
+      <view class="a shop-icn J_ping" report-eventid="MProductdetail_BottomToShop" report-eventlevel="3">
+        <em class="bottom-icon-shop"></em>
+        <view class="span focus-info">进店</view>
+      </view>
+      <view class="a cart-car-icn J_ping" id="toCartNew">
+        <em class="btm-act-icn" id="shoppingCart">
+          <i class="order-numbers" id="carNum">1</i>
+        </em>
+        <view class="span focus-info">购物车</view>
+      </view>
+    </view>
+    <view class="action-list">
+      <view class="a yellow-color add_cart" id="addCartBtm" style="position: relative; overflow: hidden;">加入购物车
+      </view>
+      <view class="a red-color directorder" id="directorderBtm" style="position: relative; overflow: hidden;" bindtap='nowBuyFn'>立即购买
       </view>
     </view>
   </view>

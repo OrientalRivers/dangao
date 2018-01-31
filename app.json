@@ -6,12 +6,9 @@
     "pages/classify/list/list",
     "pages/classify/list/detail/detail",
     "pages/logs/logs",
-<<<<<<< HEAD
+    "pages/logs/order/order",
     "pages/logs/orderlist/orderlist",
     "pages/logs/myfocus/myfocus"
-=======
-    "pages/logs/orderlist/orderlist"
->>>>>>> d16e756cee583d7470da88a8ddc3690311253645
   ],
   "window":{
     "backgroundTextStyle":"light",

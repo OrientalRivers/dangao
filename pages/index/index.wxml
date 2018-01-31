@@ -96,16 +96,18 @@
       <view class="similar-li">
         <view class='J_ping'>
           <view class="similar-product">
-            <view class="similar-posre">
-              <image class="Jschangewidth" src='../../images/q50.jpg'></image>
-            </view>
-            <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
-            <view class="similar-product-info">
-              <view class="similar-product-price">¥
-                <view class="big-price">6999</view>
-                <view class="small-price">.00</view>
+            <navigator url="/pages/classify/list/detail/detail">
+              <view class="similar-posre">
+                <image class="Jschangewidth" src='../../../images/q50.jpg'></image>
               </view>
-            </view>
+              <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
+              <view class="similar-product-info">
+                <view class="similar-product-price">¥
+                  <view class="big-price">6999</view>
+                  <view class="small-price">.00</view>
+                </view>
+              </view>
+            </navigator>
             <view class="praise-info">
               <view class="praise-num">
                 <view>好评率90%</view>
