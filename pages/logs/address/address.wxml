@@ -1,0 +1,95 @@
+<!--pages/logs/address/address.wxml-->
+<view class='container'>
+  <view id="list" class="address_list" style="">
+    <view class="address">
+      <view class="ul noChoose selected">
+        <view class="li">
+          <view class="span tag">公司</view> 安徽宿州市经济开发区宿州市高新区拱辰路云计算基地D栋310室 </view>
+        <view class="li">
+          <view class="strong">MIssTIan</view> 138****0000</view>
+        <view class="li edit">编辑</view>
+        <icon type="success" size="20" />
+      </view>
+      <view class="act">
+        <view class="span del">删除</view>
+      </view>
+    </view>
+    <view class="address_list_link" id="addressLink">
+      <view id="addAddress" class="a item item_new" style="">新增收货地址</view>
+    </view>
+  </view>
+
+
+
+
+  <view id="pageEditAddress" class="address_new" style="transform: translate(0px, 0px); padding-bottom: 10px;">
+    <view class="p">
+      <label for="">
+        <view class="span tit">收货人</view>
+        <input id="name" type="text" value="杨玉龙" placeholder="姓名"/>
+      </label>
+    </view>
+    <view class="p label_flex">
+      <label for="">
+        <view class="span tit">联系方式</view>
+        <view class="span foreign_prefix" id="areaCode" style="display:none;"></view>
+        <input id="mobile" value="138****9630" type="tel" placeholder="手机号码" maxlength="17"/>
+      </label>
+    </view>
+    <view class="p street_detail selAddr" id="selAddr">
+      <label for="">
+        <view class="span tit">所在地区</view>
+        <input type="text" placeholder="选择所在地区" readonly="readonly"/>
+      </label>
+      <i class="arrow"></i>
+    </view>
+    <view class="p street_detail" id="adinfoP">
+      <label for="">
+        <view class="span tit">详细地址</view>
+        <textarea placeholder="详细地址需填写楼栋楼层或房间号信息" id="adinfo" value="宿州市高新区拱辰路云计算基地D栋310室"></textarea>
+        <i class="close" id="info_clear"></i>
+      </label>
+      <view class="span btn_complete" id="info_sure">完成</view>
+    </view>
+    <view class="p" id="g_emailP" style="display:none;">
+      <label for="">
+        <view class="span tit">邮箱</view>
+        <input id="g_email" value="" type="text" placeholder="必填"/>
+      </label>
+    </view>
+    <view class="p" id="g_postcodeP" style="display:none;">
+      <label for="">
+        <view class="span tit">邮编</view>
+        <input id="g_postcode" value="" type="text" placeholder="必填"/>
+      </label>
+    </view>
+    <view class="p" id="g_phoneP" style="display:none;">
+      <label for="">
+        <view class="span tit">固定电话</view>
+        <input id="g_phone" value="" type="text" placeholder="选填"/>
+      </label>
+    </view>
+    <view class="p address_tags" id="adlabelP" value="公司">
+      <view class="span tit">地址标签</view>
+      <view class="span address_tags_tag cur" value="公司">公司</view>
+      <view class="span address_tags_tag" value="家">家</view>
+      <view class="span address_tags_tag" value="学校">学校</view>
+      <view class="span address_tags_tag user_tag" value=""> 自定义
+        <i class="address_tags_close"></i>
+      </view>
+      <view class="span address_tags_tag_wrap" style="display:none;">
+        <view class="span address_tags_tag cur" id="userLabelVal" value="公司">公司</view>
+        <view class="span address_tags_edit"></view>
+      </view>
+    </view>
+    <view class="fuzzy_search" id="fuzzySearch">
+      <view class="ul result_list" id="tenSuggest"></view>
+    </view>
+    <view class="mod_btns">
+      <view href="javascript:void(0);" class="a mod_btn bg_1" id="submitAddress">确认</view>
+    </view>
+    <view class="mod_btns">
+      <view href="javascript:void(0);" class="a mod_btn bg_" id="delAddress" style="display: none;">删除收货地址</view>
+    </view>
+  </view>
+</view>

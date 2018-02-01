@@ -7,14 +7,15 @@
 
     <view id="addressNullV2" class="address_new address_new_border" style="display: none; transform: translate(0px, 0px); padding-bottom: 10px;"></view>
 
-    <view class="address_defalut_wrap fixed" id="topFixedDiv" style="height: 91px;">
-      <view id="addressDefault" class="address_defalut address_border" style="display: block;">
+    <view class="address_defalut_wrap fixed" id="topFixedDiv" style="height: 91px;" bindtap='setMyAddress'>
+      <view id="addressDefault" class="address_defalut address_border" 
+        style="display: block;background:#fff url('../../../images/icon/border_img.png') -7px bottom repeat-x;background-size: 64px 5px;">
         <view class='ul'>
           <view class='li'>
-            <view class='strong'>杨玉龙 138****9630</view>
+            <view class='strong'>MissTian 138****0000</view>
           </view>
           <view class='li'>
-            <view class="span tag" id="addrLabel">公司</view> 安徽宿州市经济开发区宿州市高新区拱辰路云计算基地D栋310室
+            <view class="span tag" id="addrLabel">公司</view> 安徽北京市德克萨斯州安徽北京市德克萨斯州51区
           </view>
           <view class='li' id="globalSalTip" style="display:none">
             <em>目的国/地区如产生关税费用，需客户自行承担，请知悉。</em>
@@ -22,6 +23,7 @@
           <view class="li error" style="display: none">
             请选择乡镇/街道
           </view>
+          <image class='right_ico' src='../../../images/icon/right_ico.png'></image>
         </view>
       </view>
     </view>
@@ -31,7 +33,7 @@
         <view venderid="591440" class="order_info">
           <view class="order_shopBar" venderid="591440">
             <i class="order_shopBar_shop"></i>
-            <view class='span'>斑竹食品专营店</view>
+            <view class='span'>赤斯任食品专营店</view>
           </view>
           <view>
             <view is_abled="0" ven_ind="0" pro_ind="0" class="hproduct noclick">
@@ -57,15 +59,16 @@
             <view class="li shipping">
               <view class='strong'>配送服务</view>
               <view class="shipping_content" ship_venderid="591440">
-                <view class='p'>快递运输</view>
+                <view class='p'>小毛驴运输</view>
                 <view class="type_justify">
                   <view class="left">中小件送货时间</view>工作日、双休日与节假日均可送货</view>
               </view>
+              <image class='right_ico' src='../../../images/icon/right_ico.png'></image>
             </view>
           </view>
           <view class="order_info_guarantee" venderid="591440" style="">
-            <view class="order_info_guarantee_title">退换无忧</view>
-            <view class="order_info_guarantee_content"> 7天内退货，15天内换货，可享一次运费赔付到小金库
+            <view class="order_info_guarantee_title">防偷吃</view>
+            <view class="order_info_guarantee_content">可享一次运费赔付到小金库
               <i class="info"></i>
             </view>
             <view class="order_info_guarantee_price " venderid="591440" rtype="2"> ¥0.50 </view>
@@ -79,6 +82,7 @@
             <view href="javascript:void(0);" class="a content">
               <view class='strong'>发票信息</view>
               <view>个人 商品明细</view>
+              <image class='right_ico' src='../../../images/icon/right_ico.png'></image>
             </view>
           </view>
           <view id="conponListTab" class='li' style="display: none;"></view>
@@ -86,32 +90,22 @@
             <view href="javascript:void(0)" class="a content">
               <view class='strong'>优惠卷</view>
               <em class="disabled">无可用</em>
+              <image class='right_ico' src='../../../images/icon/right_ico.png'></image>
             </view>
           </view>
           <view id="codeTab" style="display:none;" class='li'></view>
           <view id="jdBeanTab" asset_tag="bean" style="" class="li disabled">
             <view class="a content">
               <view class='strong'>专享</view>
-              <em>共有71个 不够1000整数倍，不可用
+              <em>不可用
               </em>
+              <image class='right_ico' src='../../../images/icon/right_ico.png'></image>
             </view>
             <view class="tips_dou"></view>
           </view>
         </view>
-        <view class="mod_blockTips dShow" id="douYellowBar" style="">使用京豆支付需完成实名认证，
+        <view class="mod_blockTips dShow" id="douYellowBar" style="">使用专享支付需完成实名认证，
           <em id="dShiming">点此认证</em>
-        </view>
-        <view id="payPass" style="display: none;">
-          <view class="input_password" id="longPass" style="display: none;">
-            <label class="input_password_label">支付密码</label>
-            <input type="password" placeholder="请输入京东支付密码" /> </view>
-          <view class="input_password_num" id="shortPass" style="display: none;">
-            <label class="input_password_num_label">支付密码</label>
-            <view class="input_password_num_input" id="copyInput"></view>
-            <input type="tel" class="i-text" id="shortPassInput" maxlength="6" style="height:1px;border-style:none" /> </view>
-          <view class="tips">1. 使用部分虚拟资产（包括京豆、京券、余额、京东卡/E卡）或参加京豆优惠购时，为保障资产安全，请输入支付密码。 2. 参加京豆优惠购扣除的京豆，提交订单后，不支持退还。 忘记密码？
-            <view href="javascript:void(0);" id="resetPassword">重置京东支付密码</view>
-          </view>
         </view>
       </view>
 
@@ -129,136 +123,49 @@
       <view class="buy_chart">
         <view class="buy_chart_item">
           <view class="buy_chart_item_text">商品金额</view>
-          <view class="buy_chart_item_price">¥&nbsp;126.00</view>
+          <view class="buy_chart_item_price">¥ 126.00</view>
         </view>
         <view class="buy_chart_item">
           <view class="buy_chart_item_text">运费
             <view class="buy_chart_item_tip"> </view>
           </view>
-          <view class="buy_chart_item_price">+&nbsp;¥0.00</view>
+          <view class="buy_chart_item_price">+ ¥0.00</view>
+        </view>
+        <view class="buy_chart_item">
+          <view class="buy_chart_item_text">优惠卷
+            <view class="buy_chart_item_tip"> </view>
+          </view>
+          <view class="buy_chart_item_price">- ¥0.00</view>
+        </view>
+        <view class="buy_chart_item">
+          <view class="buy_chart_item_text">专享
+            <view class="buy_chart_item_tip"> </view>
+          </view>
+          <view class="buy_chart_item_price">- ¥0.00</view>
         </view>
       </view>
     </view>
     <view id="payArea" class="pay_area">
       <view class="price">总价：
-        <strong id="pageTotalPrice" price="126.00">¥126.00</strong>
-      </view>
-      <view class="order_additional_tips type_lnk" id="couBar" style="display:none">
-        <view class="order_additional_tips_text">
-          <view id="freeShipFeeTip"> 购物满99元（10kg内）可免运费 </view>
-          <view class="order_additional_tips_right" id="shipFeeChou">去凑单</view>
-        </view>
-      </view>
-      <view class="buy_qrcode" id="buy_qrcode" style="display: none">
-        <view>支付失败？试试微信扫码支付</view>
-        <view class="img" id="buy_qrcode_img"></view>
-        <view>长按图片[识别二维码]付款</view>
+        <view class='strong' id="pageTotalPrice">¥126.00</view>
       </view>
       <view id="payBtnList" style="">
-        <view class="mod_btns" id="btnQQPay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_qq">QQ钱包支付</view>
-        </view>
-        <view class="mod_btns_tips" id="qqPayPro" style="display: none;">使用QQ钱包支付，即可获得全场满59减6优惠券1张~
-
-          <view href="//wqs.jd.com/my/chou/qqproillustrate.shtml">查看活动规则</view>
-        </view>
-        <view class="mod_btns" id="btnWxPay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_wx">微信支付</view>
-        </view>
-        <view class="mod_btns" id="btnWxH5Pay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_wx">微信支付</view>
-        </view>
-        <view class="mod_btns" id="btnTenpay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_tenPay">财付通支付</view>
-        </view>
-        <view class="mod_btns" id="btnKuangPay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_jd">京东支付
-            <view style="display:none;">(京东旗下支付平台)</view>
-          </view>
-        </view>
-        <view class="mod_btns" id="btnCodPay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_pay">货到付款</view>
-          <view class="mod_btn bg_pay" style="display: none;">促</view>
-        </view>
-        <view class="mod_btns" id="btnCodPay3LAddr" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_pay">货到付款</view>
-          <view class="mod_btn bg_pay" style="display: none;">促</view>
-        </view>
-        <view class="mod_btns" id="btnBaitiao" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn mod_btn bg_bt">
-            <view>京东白条
-              <view id="btnBaitiaoTitle">分期还款，超低利息</view>
-            </view>
-          </view>
-        </view>
-        <view class="mod_btns mod_btns_wrap" id="btnDaiPay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_help">
-            <view>找人代付
-              <view>指定一位好友帮您支付</view>
-            </view>
-          </view>
-          <view id="daifuTip" class="mod_btn bg_help"></view>
-        </view>
-        <view class="mod_btns mod_btns_wrap" id="btnZhongChou" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_chou">
-            <view id="chouDesc">好友筹款
-              <view>邀请多位好友帮您支付</view>
-            </view>
-          </view>
-          <view id="zhongChouTip" class="mod_btn bg_chou"></view>
-        </view>
-        <view class="mod_btns mod_btns_wrap" id="btnOffline" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_offline">
-            <view>银行转账
-              <view>通过银行汇款完成支付</view>
-            </view>
-          </view>
-          <view id="offlineTip" class="mod_btn bg_offline"></view>
-        </view>
-        <view class="mod_btns" id="btnConfirmOrder" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_2">提交订单</view>
-        </view>
-        <view class="mod_btns" id="personalPay" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_2">个人结算</view>
-        </view>
-        <view class="mod_btns" id="subApproval" style="display: none;">
-          <view href="javascript:void(0);" class="mod_btn bg_2">提交审批</view>
-        </view>
         <view class="mod_btns" id="btnPayOnLine" style="">
-          <view href="javascript:void(0);" class="mod_btn bg_2">在线支付</view>
+          <view href="javascript:void(0);" class="mod_btn bg_wx">微信支付</view>
         </view>
-        <view class="mod_btns_tips" id="zeroOrderTips" style="display: none;">支付金额为零，无需支付</view>
+        <view class="mod_btns" id="btnCodPay" style="">
+          <view href="javascript:void(0);" class="mod_btn bg_pay">货到付款</view>
+        </view>
+        <!-- <view class="mod_btns_tips" id="zeroOrderTips" style="display: none;">支付金额为零，无需支付</view> -->
         <view class="buy_notsupport" id="notSup" style="">
           <view class="buy_notsupport_title">此订单不支持以下支付方式</view>
           <view class="buy_notsupport_list">
-            <view id="noSupWx" style="display: none;">
-              <i class="icon_wechat"></i>
-              <view>微信支付</view>
-              <view>到店服务商品和普通商品混合购买时，不支持使用微信支付。欲使用微信支付，请拆分两单购买。</view>
-            </view>
-            <view id="noSupQQPay" style="display: none;">
-              <i class="icon">
-                <image src="http://img11.360buyimg.com/jdphoto/s80x80_jfs/t5206/299/2576345449/6298/782e45a6/591bf008N0f5f3e19.png"></image>
-              </i>
-              <view>QQ钱包支付</view>
-              <view>到店服务商品和普通商品同时购买时，不支持使用QQ钱包支付</view>
-            </view>
-            <view href="javascript:void(0);" id="openBaitiao" style="display: none;">
-              <i class="icon_baitiao"></i>
-              <view>京东白条</view>
-              <view>您尚未开通京东白条,立即激活</view>
-            </view>
-            <view id="noSupBaitiao" style="display: none;">
-              <i class="icon_baitiao"></i>
-              <view>京东白条</view>
-              <view id="baitiaoTip">白条额度不够</view>
-            </view>
             <view href="javascript:void(0);" id="delForDiscod" style="display: none;">
               <i class="icon_delivery"></i>
               <view>货到付款</view>
               <view id="clickCodTip">部分商品不支持货到付款，立即查看</view>
             </view>
-            <view href="javascript:void(0);" id="noSupCodTip" style="">
+            <view href="javascript:void(0);" class='div' id="noSupCodTip" style="">
               <i class="icon_delivery"></i>
               <view>货到付款</view>
               <view id="codNoSupTip">订单商品不支持以货到付款方式配送至您的地址</view>
@@ -269,18 +176,8 @@
       <view id="noAllSupCodTip" style="display: none"></view>
       <view class="delivery_tips" style="display: none;" id="WxpayNorightTip">此订单在本订阅号内无法使用微信支付，如需使用微信支付，请在“发现-购物-个人中心-待付款”订单内完成支付。 </view>
     </view>
-    <view id="xzdSelDiv" style="display:none;"></view>
-    <view class="buy_billbar" style="display:none;height:0;">
-      <view class="buy_billbar_inner">
-        <view class="buy_billbar_content">
-          <view class="buy_billbar_price">
-            实付款：¥
-            <em class="buy_billbar_price_int" id="appTotalprice"></em>
-            <view id="appPriceDigit"></view>
-          </view>
-        </view>
-        <view href="javascript:void(0);" class="buy_billbar_btn" id="appConfirm">提交订单</view>
-      </view>
+    <view class="qq_footer">
+      <view class="jd_logo" id="jdBtmLogo"></view>
     </view>
   </view>
 </view>

@@ -8,7 +8,8 @@
     "pages/logs/logs",
     "pages/logs/order/order",
     "pages/logs/orderlist/orderlist",
-    "pages/logs/myfocus/myfocus"
+    "pages/logs/myfocus/myfocus",
+    "pages/logs/address/address"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,4 +1,4 @@
-// pages/logs/order/order.js
+// pages/logs/address/address.js
 Page({
 
   /**
@@ -14,11 +14,7 @@ Page({
   onLoad: function (options) {
   
   },
-  setMyAddress: function () {
-    wx.navigateTo({
-      url: '../address/address',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
