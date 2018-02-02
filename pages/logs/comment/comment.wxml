@@ -1,0 +1,53 @@
+<!--pages/logs/comment/comment.wxml-->
+<view class="wx_wrap" id="wrapper" style="padding-top: 0px;">
+  <view class="comment_item" id="item_11355978">
+    <view class="a content">
+      <image class="image" src="//img13.360buyimg.com/n4/jfs/t6094/107/710811867/382815/4d54717/592bf165N755a88f0.jpg" width="50" height="50"></image>
+      <view class="p name">深入浅出Node.js </view>
+      <view class="p price">¥54.50</view>
+      <image class='right_ico'></image>
+    </view>
+    <view class="foot">
+      <view class="action">
+        <view class="a btn btn_1">填写评价
+        </view>
+      </view>
+    </view>
+    <view class="inner" id="fillin_11355978" style="display: block;">
+      <i class="arrow"></i>
+      <view class="comment_view">
+        <view class="span label">评分：</view>
+        <view class="stars" data-tag="comment-scores">
+          <view class="i" data-star="1" style="background:url('../../../images/icon/{{starNum > 0? 'star-act': 'star'}}.png');background-size: 20px;" bindtap="setStar"></view>
+          <view class="i" data-star="2" style="background:url('../../../images/icon/{{starNum > 1? 'star-act': 'star'}}.png');background-size: 20px;" bindtap="setStar"></view>
+          <view class="i" data-star="3" style="background:url('../../../images/icon/{{starNum > 2? 'star-act': 'star'}}.png');background-size: 20px;" bindtap="setStar"></view>
+          <view class="i" data-star="4" style="background:url('../../../images/icon/{{starNum > 3? 'star-act': 'star'}}.png');background-size: 20px;" bindtap="setStar"></view>
+          <view class="i" data-star="5" style="background:url('../../../images/icon/{{starNum > 4? 'star-act': 'star'}}.png');background-size: 20px;" bindtap="setStar"></view>
+        </view>
+      </view>
+      <view class="comment_textarea">
+        <view class="textarea_wrap">
+          <textarea data-tag="comment-text" maxlength="150" placeholder="这次买的商品满意吗？写点心得给其他顾客参考吧。长度在6-500字之间"></textarea>
+        </view>
+      </view>
+      <view class="comment_images comment_images_row">
+        <view class="span label">添加图片
+          <view class="small">（您最多可以上传3张图片）</view>
+        </view>
+        <view class="ul images">
+          <view class="li">
+            <view class="a btn_add"></view>
+            <input data-tag="upload_addimginput" class="upload_addimginput" id="inputImg" type="file" style="position: absolute; top: 0px; left: 0px; width: 48px; height: 48px; opacity: 0; display: block;" />
+          </view>
+        </view>
+      </view>
+      <view class="comment_gwq">
+        <icon type='success' size='15'></icon>
+        <view class="span select selected">匿名发表</view>
+      </view>
+      <view class="mod_btns">
+        <view class="a mod_btn bg_2">发表评价</view>
+      </view>
+    </view>
+  </view>
+</view>

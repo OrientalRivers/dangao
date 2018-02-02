@@ -49,7 +49,7 @@
                   </view>
                 </view>
                 <view  class="oh_btn bg_6">再次购买</view>
-                <view  class="oh_btn bg_2" id="evaluate_70602097977" >去评价</view>
+                <view  class="oh_btn bg_2" id="evaluate_70602097977" bindtap='goComment'>去评价</view>
                 <view  class="oh_btn bg_1" id="share_70602097977" style="display:none;" >分享赚积分</view>
               </view>
               <view class="order_shopBar">tuantuan</view>

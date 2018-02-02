@@ -1,11 +1,11 @@
-// pages/logs/orderlist/orderlist.js
+// pages/logs/comment/comment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    curNav: 0,
+    starNum: 5
   },
 
   /**
@@ -14,16 +14,9 @@ Page({
   onLoad: function (options) {
   
   },
-  switchOrderlistTab: function(e) {
-    console.log(e.currentTarget.dataset.index);
-    console.log(e);
+  setStar: function (e) {
     this.setData({
-      curNav: e.currentTarget.dataset.index,
-    })
-  },
-  goComment: function () {
-    wx.navigateTo({
-      url: '../comment/comment',
+      starNum: e.currentTarget.dataset.star
     })
   },
   /**

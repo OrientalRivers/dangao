@@ -9,7 +9,8 @@
     "pages/logs/order/order",
     "pages/logs/orderlist/orderlist",
     "pages/logs/myfocus/myfocus",
-    "pages/logs/address/address"
+    "pages/logs/address/address",
+    "pages/logs/comment/comment"
   ],
   "window":{
     "backgroundTextStyle":"light",

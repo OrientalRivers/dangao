@@ -16,11 +16,11 @@
   <view class="goods-part price-floor">
     <view class="basic-info">
       <view class="prod-title">
-        <view class="title">
+        <view class="title" bindtap='isAttFn'>
           <view>
-            <image src='../../../../images/icon/att.png'></image>
+            <image src='../../../../images/icon/{{isAtt == 1? "att-act.png": "att.png"}}'></image>
           </view>
-          <view class="focus-info">关注</view>
+          <view class="focus-info">{{isAtt == 1? "已关注": "关注"}}</view>
         </view>
         <view>
           <view class="title-text-wrap padding-right-60">
@@ -109,8 +109,9 @@
       <view class="spec-desc">
         <view class="part-note-msg">已选</view>
         <view id="specDetailInfo" class="base-txt">
-          遥远的祝福 8寸
-          <view class="span amount">1件</view>
+          <!-- 遥远的祝福 8寸 -->
+          {{size}}
+          <view class="span amount">{{num}}件</view>
         </view>
         <em class="icon-popups"></em>
       </view>
@@ -119,6 +120,45 @@
           <i class="warranty-icon"></i>可选延保</view>
       </view>
     </view>
+
+
+    <view class="nature-container" id="natureCotainer">
+      <!--颜色 5.5版本之前的规格属性-->
+      <!--尺寸-->
+      <view class="pro-size">
+        <view class="span part-note-msg"> 规格 </view>
+        <view class="p" id="size">
+          <view class="a a-item selected J_ping">12寸 适合6-9个人食用</view>
+          <view class="a a-item J_ping">10寸 适合3-6个人食用</view>
+          <view class="a a-item J_ping">16寸 适合15-19个人食用</view>
+          <view class="a a-item J_ping">14寸 适合9-15个人食用</view>
+          <view class="a a-item J_ping">18寸 适合19-24个人食用</view>
+          <view class="a a-item J_ping">8寸 适合1-3个人食用</view>
+        </view>
+      </view>
+      <!--容量-->
+
+      <!--数量-->
+      <view id="addCartNum" class="pro-count" style="display: block;">
+        <view class="span part-note-msg">数量</view>
+        <view class="quantity-wrapper">
+          <view class="a quantity-decrease limited" bindtap='minus'>
+            <!-- <view class='em' id="minus">-</view> -->
+            -
+          </view>
+          <input type="tel" class="quantity" size="4" value="{{num}}" id="number" />
+          <view class="a quantity-increase" id="quantityPlus" bindtap='plus'>
+            <!-- <em id="plus">+</em> -->
+            +
+          </view>
+        </view>
+        <view class="span lowestbuy-tip"></view>
+      </view>
+    </view>
+
+
+
+
   </view>
   <!-- 选择 -->
 
@@ -178,7 +218,12 @@
           <view class="comment-item-info J_ping">
             <view class="comment-item-author">zzl凌轩</view>
             <view class="product-item-star ">
-              <view class="real-star comment-stars-width5"></view>
+              <!-- <view class="real-star comment-stars-width5"></view> -->
+              <image class="real-star" data-star="1" src="../../../../images/icon/{{starNum > 0? 'star-act': 'star'}}.png"></image>
+              <image class="real-star" data-star="2" src="../../../../images/icon/{{starNum > 1? 'star-act': 'star'}}.png"></image>
+              <image class="real-star" data-star="3" src="../../../../images/icon/{{starNum > 2? 'star-act': 'star'}}.png"></image>
+              <image class="real-star" data-star="4" src="../../../../images/icon/{{starNum > 3? 'star-act': 'star'}}.png"></image>
+              <image class="real-star" data-star="5" src="../../../../images/icon/{{starNum > 4? 'star-act': 'star'}}.png"></image>
             </view>
           </view>
           <view class="comment-item-content down-icon J_ping">

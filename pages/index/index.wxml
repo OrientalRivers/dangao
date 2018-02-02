@@ -98,7 +98,7 @@
           <view class="similar-product">
             <navigator url="/pages/classify/list/detail/detail">
               <view class="similar-posre">
-                <image class="Jschangewidth" src='../../../images/q50.jpg'></image>
+                <image class="Jschangewidth" src='/images/q50.jpg'></image>
               </view>
               <view class="similar-product-text">元祖（GANSO） 奶油水果蛋糕 生日蛋糕同城配送 甜蜜如心 8寸</view>
               <view class="similar-product-info">
